@@ -24,10 +24,10 @@ class ComposedSampleFactoryImpl : ComposedSampleFactory() {
                 word = FactoryUtil.generateMultipleStrings("small-word-about-human-design", 50)
             ),
             sampleD = SampleD(
-                ints = FactoryUtil.generateMultipleIntegers(13, 100)
+                ints = FactoryUtil.generateMultipleInts(13, 100)
             ),
             sampleE = SampleE(
-                doubles = FactoryUtil.generateMultipleDouble(0.88, 100)
+                doubles = FactoryUtil.generateMultipleDoubles(0.88, 100)
             )
         )
 
@@ -43,10 +43,10 @@ class ComposedSampleFactoryImpl : ComposedSampleFactory() {
                 word = FactoryUtil.generateMultipleStrings("small-word-about-human-design", 1000)
             ),
             sampleD = SampleD(
-                ints = FactoryUtil.generateMultipleIntegers(13, 1000)
+                ints = FactoryUtil.generateMultipleInts(13, 1000)
             ),
             sampleE = SampleE(
-                doubles = FactoryUtil.generateMultipleDouble(0.88, 1000)
+                doubles = FactoryUtil.generateMultipleDoubles(0.88, 1000)
             )
         )
 
@@ -62,10 +62,10 @@ class ComposedSampleFactoryImpl : ComposedSampleFactory() {
                 word = FactoryUtil.generateMultipleStrings("small-word-about-human-design", 5000)
             ),
             sampleD = SampleD(
-                ints = FactoryUtil.generateMultipleIntegers(13, 5000)
+                ints = FactoryUtil.generateMultipleInts(13, 5000)
             ),
             sampleE = SampleE(
-                doubles = FactoryUtil.generateMultipleDouble(0.88, 5000)
+                doubles = FactoryUtil.generateMultipleDoubles(0.88, 5000)
             )
         )
 }

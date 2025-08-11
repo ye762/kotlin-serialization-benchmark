@@ -17,10 +17,10 @@ class FactoryUtil {
             return builder.toString()
         }
 
-        fun generateMultipleIntegers(base: Int, times: Int): List<Int> =
+        fun generateMultipleInts(base: Int, times: Int): List<Int> =
             generateMultipleNumbers(base, times) as List<Int>
 
-        fun generateMultipleDouble(base: Double, times: Int): List<Double> =
+        fun generateMultipleDoubles(base: Double, times: Int): List<Double> =
             generateMultipleNumbers(base, times) as List<Double>
 
 
