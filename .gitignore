@@ -2,10 +2,12 @@
 /.idea/
 /gradle/
 build/
+gradle.properties
+gradlew.bat
+gradlew
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
-
 ### IntelliJ IDEA ###
 .idea/modules.xml
 .idea/jarRepositories.xml
