@@ -1,13 +1,14 @@
 package org.ye.serialization.benchmark.factory.impl
 
 import org.ye.serialization.benchmark.factory.ComposedSampleFactory
-import org.ye.serialization.benchmark.factory.NestedSampleFactory
+import org.ye.serialization.benchmark.factory.DomainSampleFactory
 import org.ye.serialization.benchmark.factory.util.FactoryUtil
-import org.ye.serialization.benchmark.model.NestedSample
+import org.ye.serialization.benchmark.factory.util.FactoryUtil.Companion.generateNestedSample
 import org.ye.serialization.benchmark.model.SampleA
 import org.ye.serialization.benchmark.model.SampleB
 import org.ye.serialization.benchmark.model.SampleC
 import org.ye.serialization.benchmark.model.ComposedSample
+import org.ye.serialization.benchmark.model.DomainSample
 import org.ye.serialization.benchmark.model.SampleD
 import org.ye.serialization.benchmark.model.SampleE
 
@@ -70,18 +71,25 @@ class ComposedSampleFactoryImpl : ComposedSampleFactory() {
         )
 }
 
-class NestedSampleFactoryImpl(private val composedSampleFactory: ComposedSampleFactory) : NestedSampleFactory() {
-    override fun produceLightSample(): NestedSample {
-        return composedSampleFactory.produceLightSample().let {
-            FactoryUtil.generateNestedSample(it)
-        }
-    }
+class DomainSampleFactoryImpl(private val composedSampleFactory: ComposedSampleFactory) : DomainSampleFactory() {
+    override fun produceLightSample(): DomainSample =
+        DomainSample(
+            data = generateNestedSample(
+                composedSample = composedSampleFactory.produceLightSample()
+            )
+        )
 
-    override fun produceMediumSample(): NestedSample {
-        return composedSampleFactory.produceMediumSample().let { FactoryUtil.generateNestedSample(it) }
-    }
+    override fun produceMediumSample(): DomainSample =
+        DomainSample(
+            data = generateNestedSample(
+                composedSample = composedSampleFactory.produceMediumSample()
+            )
+        )
 
-    override fun produceHeavySample(): NestedSample {
-        return composedSampleFactory.produceHeavySample().let { FactoryUtil.generateNestedSample(it) }
-    }
+    override fun produceHeavySample(): DomainSample =
+        DomainSample(
+            data = generateNestedSample(
+                composedSample = composedSampleFactory.produceHeavySample()
+            )
+        )
 }

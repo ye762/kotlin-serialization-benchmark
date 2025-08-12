@@ -49,10 +49,15 @@ data class NestedSampleD(
     val ref3: ComposedSample
 )
 @Serializable
-data class NestedSample(
+data class NestedSampleE(
     val ref0: NestedSampleD,
     val ref1: NestedSampleC,
     val ref2: NestedSampleB,
     val ref3: NestedSampleA,
     val ref4: ComposedSample
+)
+
+@Serializable
+data class DomainSample(
+    val data: NestedSampleE
 )

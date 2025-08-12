@@ -4,7 +4,7 @@ import org.ye.serialization.benchmark.model.NestedSampleA
 import org.ye.serialization.benchmark.model.NestedSampleB
 import org.ye.serialization.benchmark.model.NestedSampleC
 import org.ye.serialization.benchmark.model.NestedSampleD
-import org.ye.serialization.benchmark.model.NestedSample
+import org.ye.serialization.benchmark.model.NestedSampleE
 import org.ye.serialization.benchmark.model.ComposedSample
 
 @Suppress("UNCHECKED_CAST")
@@ -33,8 +33,8 @@ class FactoryUtil {
             return list
         }
 
-        fun generateNestedSample(composedSample: ComposedSample): NestedSample {
-            return NestedSample(
+        fun generateNestedSample(composedSample: ComposedSample): NestedSampleE {
+            return NestedSampleE(
                 ref0 = NestedSampleD(
                     ref0 = NestedSampleC(
                         ref0 = NestedSampleB(

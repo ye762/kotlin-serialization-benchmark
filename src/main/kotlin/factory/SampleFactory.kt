@@ -1,7 +1,7 @@
 package org.ye.serialization.benchmark.factory
 
-import org.ye.serialization.benchmark.model.NestedSample
 import org.ye.serialization.benchmark.model.ComposedSample
+import org.ye.serialization.benchmark.model.DomainSample
 
 interface SampleFactory {
     fun produceLightSample(): Any
@@ -15,8 +15,8 @@ abstract class ComposedSampleFactory : SampleFactory {
     abstract override fun produceHeavySample(): ComposedSample
 }
 
-abstract class NestedSampleFactory : SampleFactory {
-    abstract override fun produceLightSample(): NestedSample
-    abstract override fun produceMediumSample(): NestedSample
-    abstract override fun produceHeavySample(): NestedSample
+abstract class DomainSampleFactory : SampleFactory {
+    abstract override fun produceLightSample(): DomainSample
+    abstract override fun produceMediumSample(): DomainSample
+    abstract override fun produceHeavySample(): DomainSample
 }
