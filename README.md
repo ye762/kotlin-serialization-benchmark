@@ -1,5 +1,15 @@
 # kotlin-serialization-benchmark using JMH
-## kotlinx
+
+## Hardware setup
+
+```
+Operating System: Fedora Linux 42
+Kernel Version: 6.15.8-200.fc42.x86_64 (64-bit)
+Processors: 8 × Intel® Core™ i7-4770 CPU @ 3.40GHz
+Memory: 16 GiB of RAM (14.5 GiB usable)
+```
+
+## Kotlinx
 
 ```
 Result "org.ye.serialization.benchmark.benchmark.KotlinxBenchmark.lightSampleBenchmark":
