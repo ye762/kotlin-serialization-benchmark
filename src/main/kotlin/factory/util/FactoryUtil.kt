@@ -1,6 +1,6 @@
 package org.ye.serialization.benchmark.factory.util
 
-import org.ye.serialization.benchmark.model.NestedSampleA
+import org.ye.serialization.benchmark.model.NestedA
 import org.ye.serialization.benchmark.model.NestedSampleB
 import org.ye.serialization.benchmark.model.NestedSampleC
 import org.ye.serialization.benchmark.model.NestedSampleD
@@ -39,22 +39,22 @@ class FactoryUtil {
                     ref0 = NestedSampleC(
                         ref0 = NestedSampleB(
                             ref0 = composedSample,
-                            ref1 = NestedSampleA(
+                            ref1 = NestedA(
                                 ref0 = composedSample
                             )
                         ),
-                        ref1 = NestedSampleA(
+                        ref1 = NestedA(
                             ref0 = composedSample
                         ),
                         ref2 = composedSample
                     ),
                     ref1 = NestedSampleB(
                         ref0 = composedSample,
-                        ref1 = NestedSampleA(
+                        ref1 = NestedA(
                             ref0 = composedSample
                         )
                     ),
-                    ref2 = NestedSampleA(
+                    ref2 = NestedA(
                         ref0 = composedSample
                     ),
                     ref3 = composedSample
@@ -62,22 +62,22 @@ class FactoryUtil {
                 ref1 = NestedSampleC(
                     ref0 = NestedSampleB(
                         ref0 = composedSample,
-                        ref1 = NestedSampleA(
+                        ref1 = NestedA(
                             ref0 = composedSample
                         )
                     ),
-                    ref1 = NestedSampleA(
+                    ref1 = NestedA(
                         ref0 = composedSample
                     ),
                     ref2 = composedSample
                 ),
                 ref2 = NestedSampleB(
                     ref0 = composedSample,
-                    ref1 = NestedSampleA(
+                    ref1 = NestedA(
                         ref0 = composedSample
                     )
                 ),
-                ref3 = NestedSampleA(
+                ref3 = NestedA(
                     ref0 = composedSample
                 ),
                 ref4 = composedSample

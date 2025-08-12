@@ -15,57 +15,57 @@ import org.ye.serialization.benchmark.model.SampleE
 class ComposedSampleFactoryImpl : ComposedSampleFactory() {
     override fun produceLightSample(): ComposedSample =
         ComposedSample(
-            sampleA = SampleA(
-                vInt = 13
+            a = SampleA(
+                v0 = 13
             ),
-            sampleB = SampleB(
-                vDouble = 0.88
+            b = SampleB(
+                v0 = 0.88
             ),
-            sampleC = SampleC(
+            c = SampleC(
                 word = FactoryUtil.generateMultipleStrings("small-word-about-human-design", 50)
             ),
-            sampleD = SampleD(
+            d = SampleD(
                 ints = FactoryUtil.generateMultipleInts(13, 100)
             ),
-            sampleE = SampleE(
+            e = SampleE(
                 doubles = FactoryUtil.generateMultipleDoubles(0.88, 100)
             )
         )
 
     override fun produceMediumSample(): ComposedSample =
         ComposedSample(
-            sampleA = SampleA(
-                vInt = 13
+            a = SampleA(
+                v0 = 13
             ),
-            sampleB = SampleB(
-                vDouble = 0.88
+            b = SampleB(
+                v0 = 0.88
             ),
-            sampleC = SampleC(
+            c = SampleC(
                 word = FactoryUtil.generateMultipleStrings("small-word-about-human-design", 1000)
             ),
-            sampleD = SampleD(
+            d = SampleD(
                 ints = FactoryUtil.generateMultipleInts(13, 1000)
             ),
-            sampleE = SampleE(
+            e = SampleE(
                 doubles = FactoryUtil.generateMultipleDoubles(0.88, 1000)
             )
         )
 
     override fun produceHeavySample(): ComposedSample =
         ComposedSample(
-            sampleA = SampleA(
-                vInt = 13
+            a = SampleA(
+                v0 = 13
             ),
-            sampleB = SampleB(
-                vDouble = 0.88
+            b = SampleB(
+                v0 = 0.88
             ),
-            sampleC = SampleC(
+            c = SampleC(
                 word = FactoryUtil.generateMultipleStrings("small-word-about-human-design", 5000)
             ),
-            sampleD = SampleD(
+            d = SampleD(
                 ints = FactoryUtil.generateMultipleInts(13, 5000)
             ),
-            sampleE = SampleE(
+            e = SampleE(
                 doubles = FactoryUtil.generateMultipleDoubles(0.88, 5000)
             )
         )
