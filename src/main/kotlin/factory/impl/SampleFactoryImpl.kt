@@ -22,7 +22,7 @@ class ComposedSampleFactoryImpl : ComposedSampleFactory() {
                 v0 = 0.88
             ),
             c = SampleC(
-                word = FactoryUtil.generateMultipleStrings("small-word-about-human-design", 50)
+                word = FactoryUtil.generateMultipleStrings("small-word-about-human-design", 100)
             ),
             d = SampleD(
                 ints = FactoryUtil.generateMultipleInts(13, 100)

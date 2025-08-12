@@ -13,7 +13,9 @@ class FactoryUtil {
         fun generateMultipleStrings(base: String, times: Int): String {
             assert(times > 0)
             val builder = StringBuilder()
-            for (i in 1 .. times) builder.append(base)
+            (1 .. times).forEach { i ->
+                builder.append(base)
+            }
             return builder.toString()
         }
 
@@ -27,7 +29,7 @@ class FactoryUtil {
         private fun generateMultipleNumbers(base: Number, times: Int): List<Number> {
             assert(times > 0)
             val list = ArrayList<Number>(times)
-            for (i in 1 .. times ) {
+            (1 .. times).forEach { i ->
                 list.add(base)
             }
             return list
