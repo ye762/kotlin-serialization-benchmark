@@ -23,7 +23,7 @@ Memory: 16 GiB of RAM (14.5 GiB usable)
 ```
 
 ## Dataset
-See ``
+See `SampleFactoryImpl.kt`
 
 ## Measurement
 
@@ -58,4 +58,4 @@ Jackson shows same or better performance than Gson and much worse than kotlinx. 
 Kotlinx shows better or same performance on all datasets.
 
 So, we did prove that Gson is good for smaller data, but still kotlinx is faster in all measurements.
-Also we did not prove that Jackson is better for large dataset. But we assume that there is a problem in medium and heavy datasets. Good point for further analysis is to increase size of datasets which probably will make good distinction between Gson and Jackson in measurements.
+Also, we did not prove that Jackson is better for large dataset. But we assume that there is a problem in medium and heavy datasets. Good point for further analysis is to increase size of datasets which probably will make good distinction between Gson and Jackson in measurements.
