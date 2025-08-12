@@ -11,7 +11,7 @@
 
 ## Purpose
 
-Show that actual performance meets hypothesis from `Introduction` raw. 
+Show that actual performance meets hypothesis from `Introduction:Performnce`. 
 
 ## Hardware setup
 
